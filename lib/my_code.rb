@@ -64,6 +64,11 @@ def reduce_to_any_true(source_array)
   while i < source_array.length do
     value = source_array[i - 1] || source_array[i]
     i += 1
+    if value == true
+      value = true
+    else
+      value == false
+    end
   end
   value
 end
