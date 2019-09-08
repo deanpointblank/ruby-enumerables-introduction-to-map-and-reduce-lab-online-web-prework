@@ -57,3 +57,13 @@ def reduce_to_all_true(source_array)
   end
   value
 end
+
+def reduce_to_any_true(source_array)
+  i = 0
+  value = nil
+  while i < source_array.length do
+    value = source_array[i - 1] || source_array [i]
+    i += 1
+  end
+  value
+end
